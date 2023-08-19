@@ -4,7 +4,6 @@ import { AcademicSemesterRoutes } from '../modules/AcademicSemester/academicSeme
 const router = express.Router();
 
 const moduleRoutes = [
-  // ... routes
   {
     path: '/academic-semesters',
     route: AcademicSemesterRoutes,
