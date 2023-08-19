@@ -16,7 +16,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1', routes);
-
+app.get('/api/v1', (req, res) => {
+  res.send('found');
+});
 
 //global error handler
 app.use(globalErrorHandler);
