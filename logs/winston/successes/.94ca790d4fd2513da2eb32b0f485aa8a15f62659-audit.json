@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\university-management-core-service-starter-main\\logs\\winston\\successes\\.94ca790d4fd2513da2eb32b0f485aa8a15f62659-audit.json",
+    "files": [
+        {
+            "date": 1692447227283,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\university-management-core-service-starter-main\\logs\\winston\\successes\\phu-2023-19-08-18-success.log",
+            "hash": "9e6f3d49eda5c13a70b24a3dbe5905c1ccbc3d531ec2b63ca6fc34f344c44d67"
+        }
+    ],
+    "hashType": "sha256"
+}
