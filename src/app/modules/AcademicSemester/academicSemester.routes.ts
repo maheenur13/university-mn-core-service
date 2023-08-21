@@ -10,5 +10,7 @@ router.post(
   validateRequest(academicSemesterValidation.create),
   AcademicSemesterController.insertToDB
 );
+router.get('/', AcademicSemesterController.getAllFromDB);
+router.get('/:id', AcademicSemesterController.getSingleData);
 
 export const AcademicSemesterRoutes = router;
