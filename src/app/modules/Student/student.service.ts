@@ -22,6 +22,39 @@ const insertIntoDB = async (data: Student): Promise<Student> => {
   return result;
 };
 
+const updateStudent = async (
+  id: string,
+  payload: Partial<Student>
+): Promise<Student> => {
+  const result = await prisma.student.update({
+    where: {
+      id,
+    },
+    data: payload,
+    include: {
+      academicDepartment: true,
+      academicFaculty: true,
+      academicSemester: true,
+    },
+  });
+
+  return result;
+};
+const deleteStudent = async (id: string): Promise<Student> => {
+  const result = await prisma.student.delete({
+    where: {
+      id,
+    },
+    include: {
+      academicDepartment: true,
+      academicFaculty: true,
+      academicSemester: true,
+    },
+  });
+
+  return result;
+};
+
 const getAllFromDB = async (
   filters: IStudentFilterRequest,
   options: IPaginationOptions
@@ -113,4 +146,6 @@ export const StudentService = {
   insertIntoDB,
   getAllFromDB,
   getByIdFromDB,
+  updateStudent,
+  deleteStudent,
 };
