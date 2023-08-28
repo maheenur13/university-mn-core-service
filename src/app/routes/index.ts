@@ -2,8 +2,12 @@ import express from 'express';
 import { AcademicDepartmentRoutes } from '../modules/AcademicDepartment/academicDepartment.routes';
 import { academicFacultyRoutes } from '../modules/AcademicFaculty/academicFaculty.routes';
 import { AcademicSemesterRoutes } from '../modules/AcademicSemester/academicSemester.routes';
-import { BuildingServiceRoute } from '../modules/Building/building.routes';
+
+import { buildingRoutes } from '../modules/Building/building.routes';
+import { courseRoutes } from '../modules/Course/course.routes';
 import { facultyRoutes } from '../modules/Faculty/faculty.routes';
+import { roomRoutes } from '../modules/Room/room.routes';
+import { semesterRegistrationRoutes } from '../modules/SemesterRagistration/semesterregistration.routes';
 import { studentRoutes } from '../modules/Student/student.routes';
 
 const router = express.Router();
@@ -32,7 +36,19 @@ const moduleRoutes = [
   },
   {
     path: '/buildings',
-    route: BuildingServiceRoute,
+    route: buildingRoutes,
+  },
+  {
+    path: '/rooms',
+    route: roomRoutes,
+  },
+  {
+    path: '/courses',
+    route: courseRoutes,
+  },
+  {
+    path: '/semester-registration',
+    route: semesterRegistrationRoutes,
   },
 ];
 
