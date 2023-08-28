@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\successes\\.6c33372d7403c4c5aff52dfb63169c5c737c282a-audit.json",
+    "files": [
+        {
+            "date": 1692808774208,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\successes\\phu-2023-23-08-22-success.log",
+            "hash": "7fa1aabbb7586840360d6b2e46b081d47d49ffd0e92a7b118d01891d6cf6b852"
+        },
+        {
+            "date": 1692811518288,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\successes\\phu-2023-23-08-23-success.log",
+            "hash": "b945688f5ce52638c2d80e33b6d2fc8c366498694cbbb8005ac36baa206e1a73"
+        },
+        {
+            "date": 1692957978305,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\successes\\phu-2023-25-08-16-success.log",
+            "hash": "6d7ecb1a5ce5cf7cb97c9c072c16894e7cfb7b413864d8508f1712480ea89dbe"
+        },
+        {
+            "date": 1692961891664,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\successes\\phu-2023-25-08-17-success.log",
+            "hash": "42ec5d00618d5d617779153e25a32448ddac6023dd5968f5c1596a61c4769f22"
+        },
+        {
+            "date": 1692964943854,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\successes\\phu-2023-25-08-18-success.log",
+            "hash": "fb4f14373521c415ad70b1b68450eff8d133e4d728f57af7a3ac94ad1d8ea934"
+        }
+    ],
+    "hashType": "sha256"
+}
