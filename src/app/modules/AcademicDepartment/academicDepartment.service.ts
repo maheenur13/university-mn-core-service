@@ -1,4 +1,4 @@
-import { AcademicDepartemt, Prisma } from '@prisma/client';
+import { AcademicDepartment, Prisma } from '@prisma/client';
 import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
@@ -11,9 +11,9 @@ import {
 import { IAcademicDepartmentFilterRequest } from './academicDepartment.inderface';
 
 const insertIntoDB = async (
-  data: AcademicDepartemt
-): Promise<AcademicDepartemt> => {
-  const result = await prisma.academicDepartemt.create({
+  data: AcademicDepartment
+): Promise<AcademicDepartment> => {
+  const result = await prisma.academicDepartment.create({
     data,
     include: {
       academicFaculty: true,
@@ -26,7 +26,7 @@ const insertIntoDB = async (
 const getAllFromDB = async (
   filters: IAcademicDepartmentFilterRequest,
   options: IPaginationOptions
-): Promise<IGenericResponse<AcademicDepartemt[]>> => {
+): Promise<IGenericResponse<AcademicDepartment[]>> => {
   const { limit, page, skip } = paginationHelpers.calculatePagination(options);
   const { searchTerm, ...filterData } = filters;
 
@@ -63,10 +63,10 @@ const getAllFromDB = async (
     });
   }
 
-  const whereConditions: Prisma.AcademicDepartemtWhereInput =
+  const whereConditions: Prisma.AcademicDepartmentWhereInput =
     andConditions.length > 0 ? { AND: andConditions } : {};
 
-  const result = await prisma.academicDepartemt.findMany({
+  const result = await prisma.academicDepartment.findMany({
     include: {
       academicFaculty: true,
     },
@@ -80,7 +80,7 @@ const getAllFromDB = async (
             createdAt: 'desc',
           },
   });
-  const total = await prisma.academicDepartemt.count({
+  const total = await prisma.academicDepartment.count({
     where: whereConditions,
   });
 
@@ -94,8 +94,10 @@ const getAllFromDB = async (
   };
 };
 
-const getByIdFromDB = async (id: string): Promise<AcademicDepartemt | null> => {
-  const result = await prisma.academicDepartemt.findUnique({
+const getByIdFromDB = async (
+  id: string
+): Promise<AcademicDepartment | null> => {
+  const result = await prisma.academicDepartment.findUnique({
     where: {
       id,
     },
