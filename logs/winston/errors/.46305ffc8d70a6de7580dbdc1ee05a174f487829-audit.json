@@ -44,6 +44,11 @@
             "date": 1693393241260,
             "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\errors\\phu-2023-30-08-17-error.log",
             "hash": "4964ee07f85bb257281ec3de9792b95fa1c39c555d12912a8a2fb39e0090c321"
+        },
+        {
+            "date": 1693396898415,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\3rd and 6th MILESTONE\\university-management-core-service-prisma\\logs\\winston\\errors\\phu-2023-30-08-18-error.log",
+            "hash": "147c10febc7ae4f8811c8e4374222f69715e3cef4201798522ec5ad0fd4c7a5c"
         }
     ],
     "hashType": "sha256"
