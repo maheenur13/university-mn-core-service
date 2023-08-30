@@ -13,8 +13,8 @@ import {
   semesterRegistrationRelationalFields,
   semesterRegistrationRelationalFieldsMapper,
   semesterRegistrationSearchableFields,
-} from './semesterregistration.constants';
-import { ISemesterRegistrationFilterRequest } from './semesterregistration.interfaces';
+} from './semesterRegistration.constants';
+import { ISemesterRegistrationFilterRequest } from './semesterRegistration.interfaces';
 
 const insertIntoDB = async (
   data: SemesterRegistration

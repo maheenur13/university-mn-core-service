@@ -3,7 +3,7 @@ import httpStatus from 'http-status';
 import catchAsync from '../../../shared/catchAsync';
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
-import { semesterRegistrationFilterableFields } from './semesterregistration.constants';
+import { semesterRegistrationFilterableFields } from './semesterRegistration.constants';
 import { SemesterRegistrationService } from './semesterregistration.service';
 
 const insertIntoDB = catchAsync(async (req: Request, res: Response) => {
