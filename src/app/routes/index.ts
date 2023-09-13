@@ -2,7 +2,6 @@ import express from 'express';
 import { AcademicDepartmentRoutes } from '../modules/AcademicDepartment/academicDepartment.routes';
 import { academicFacultyRoutes } from '../modules/AcademicFaculty/academicFaculty.routes';
 import { AcademicSemesterRoutes } from '../modules/AcademicSemester/academicSemester.routes';
-
 import { buildingRoutes } from '../modules/Building/building.routes';
 import { courseRoutes } from '../modules/Course/course.routes';
 import { facultyRoutes } from '../modules/Faculty/faculty.routes';
