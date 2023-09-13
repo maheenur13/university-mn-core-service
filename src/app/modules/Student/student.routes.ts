@@ -28,4 +28,24 @@ router.delete(
 );
 router.get('/:id', StudentController.getByIdFromDB);
 
+router.post(
+  '/',
+  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+  validateRequest(StudentValidation.create),
+  StudentController.insertIntoDB
+);
+
+router.patch(
+  '/:id',
+  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+  validateRequest(StudentValidation.update),
+  StudentController.updateStudent
+);
+
+router.delete(
+  '/:id',
+  auth(ENUM_USER_ROLE.SUPER_ADMIN, ENUM_USER_ROLE.ADMIN),
+  StudentController.deleteStudent
+);
+
 export const studentRoutes = router;
