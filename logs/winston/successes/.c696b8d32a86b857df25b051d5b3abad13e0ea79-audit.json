@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\university-management-core-service-prisma\\logs\\winston\\successes\\.c696b8d32a86b857df25b051d5b3abad13e0ea79-audit.json",
+    "files": [
+        {
+            "date": 1694663010037,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\university-management-core-service-prisma\\logs\\winston\\successes\\phu-2023-14-09-09-success.log",
+            "hash": "80418a026b74532565f685cf9c2361100a3b0c2672e28bb4708f536df5d7512b"
+        }
+    ],
+    "hashType": "sha256"
+}
