@@ -4,3 +4,15 @@ export const academicSemesterSearchableFields = [
   'startMonth',
   'endMonth',
 ];
+
+type IAcademicSemesterTitleMapper = {
+  [key: string]: string;
+};
+
+export const academicSemesterTitleCodeMapper: IAcademicSemesterTitleMapper = {
+  Autumn: '01',
+  Summer: '02',
+  Fall: '03',
+};
+
+export const EVENT_ACADEMICSEMESTER_CREATED = 'academic-semester.created';

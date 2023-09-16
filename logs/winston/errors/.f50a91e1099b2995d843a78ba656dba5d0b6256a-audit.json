@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\errors\\.f50a91e1099b2995d843a78ba656dba5d0b6256a-audit.json",
+    "files": [
+        {
+            "date": 1694821534957,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\errors\\phu-2023-16-09-05-error.log",
+            "hash": "faf9ae37aec3b41552461df54cab9ec3bea07912011daef23071127df4e4d09d"
+        },
+        {
+            "date": 1694823533294,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\errors\\phu-2023-16-09-06-error.log",
+            "hash": "d01d251c500c2a31d188365ed7a075052fd1bd72be72202bdf06d989ed2d6fb7"
+        }
+    ],
+    "hashType": "sha256"
+}

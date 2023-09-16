@@ -3,15 +3,33 @@ import { paginationHelpers } from '../../../helpers/paginationHelper';
 import { IGenericResponse } from '../../../interfaces/common';
 import { IPaginationOptions } from '../../../interfaces/pagination';
 import prisma from '../../../shared/prisma';
-import { academicSemesterSearchableFields } from './academicSemester.contants';
+import {
+  EVENT_ACADEMICSEMESTER_CREATED,
+  academicSemesterSearchableFields,
+  academicSemesterTitleCodeMapper,
+} from './academicSemester.contants';
 import { IAcademicSemesterFilters } from './academicSemester.inderface';
+import ApiError from '../../../errors/ApiError';
+import httpStatus from 'http-status';
+import { RedisClient } from '../../../shared/redis';
 
 const insertToDB = async (
   data: AcademicSemester
 ): Promise<AcademicSemester> => {
+  if (academicSemesterTitleCodeMapper[data.title] !== data.code) {
+    throw new ApiError(httpStatus.BAD_REQUEST, 'Invalid semester code!');
+  }
   const result = await prisma.academicSemester.create({
     data: data,
   });
+
+  if (result) {
+    await RedisClient.publish(
+      EVENT_ACADEMICSEMESTER_CREATED,
+      JSON.stringify(result)
+    );
+  }
+
   return result;
 };
 
