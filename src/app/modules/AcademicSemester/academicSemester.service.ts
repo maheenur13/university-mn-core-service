@@ -5,6 +5,7 @@ import { IPaginationOptions } from '../../../interfaces/pagination';
 import prisma from '../../../shared/prisma';
 import {
   EVENT_ACADEMICSEMESTER_CREATED,
+  EVENT_ACADEMICSEMESTER_UPDATED,
   academicSemesterSearchableFields,
   academicSemesterTitleCodeMapper,
 } from './academicSemester.contants';
@@ -109,6 +110,14 @@ const updateOneInDB = async (
     },
     data: payload,
   });
+
+  if (result) {
+    await RedisClient.publish(
+      EVENT_ACADEMICSEMESTER_UPDATED,
+      JSON.stringify(result)
+    );
+  }
+
   return result;
 };
 

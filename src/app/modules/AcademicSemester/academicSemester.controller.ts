@@ -48,6 +48,7 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
 
 const updateOneInDB = catchAsync(async (req: Request, res: Response) => {
   const { id } = req.params;
+
   const result = await AcademicSemesterService.updateOneInDB(id, req.body);
   sendResponse(res, {
     statusCode: httpStatus.OK,

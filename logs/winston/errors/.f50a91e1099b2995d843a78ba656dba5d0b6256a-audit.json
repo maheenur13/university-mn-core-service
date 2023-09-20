@@ -14,6 +14,16 @@
             "date": 1694823533294,
             "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\errors\\phu-2023-16-09-06-error.log",
             "hash": "d01d251c500c2a31d188365ed7a075052fd1bd72be72202bdf06d989ed2d6fb7"
+        },
+        {
+            "date": 1695171437184,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\errors\\phu-2023-20-09-06-error.log",
+            "hash": "33d752faa0e04819f1e95d962df3e620c66b034f012811a14d66153107144c66"
+        },
+        {
+            "date": 1695172897881,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\errors\\phu-2023-20-09-07-error.log",
+            "hash": "0feec5e91a2adfa07447a998a65e6dd9e60724670a666fdb7fd0f45517111cd1"
         }
     ],
     "hashType": "sha256"
