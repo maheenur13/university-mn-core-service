@@ -17,3 +17,4 @@ export const academicSemesterTitleCodeMapper: IAcademicSemesterTitleMapper = {
 
 export const EVENT_ACADEMICSEMESTER_CREATED = 'academic-semester.created';
 export const EVENT_ACADEMICSEMESTER_UPDATED = 'academic-semester.updated';
+export const EVENT_ACADEMICSEMESTER_DELETED = 'academic-semester.deleted';
