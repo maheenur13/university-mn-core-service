@@ -54,6 +54,11 @@
             "date": 1695380861008,
             "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\successes\\phu-2023-22-09-17-success.log",
             "hash": "7199c14bb102f1a3da2cfc60361aa8a01c905723013503192cc2babfdeaea0a3"
+        },
+        {
+            "date": 1695573049412,
+            "name": "C:\\Users\\jahid\\Desktop\\NEXT_WEB_COURSE\\AUTH-CORE-REDIS\\All APPS\\um-core-service-prisma\\logs\\winston\\successes\\phu-2023-24-09-22-success.log",
+            "hash": "e56d5bcecd294693d060049fc8c1223172e0c80f1d4c40901f91e24a1167ee70"
         }
     ],
     "hashType": "sha256"
