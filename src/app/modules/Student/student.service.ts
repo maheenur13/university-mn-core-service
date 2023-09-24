@@ -23,6 +23,24 @@ const insertIntoDB = async (data: Student): Promise<Student> => {
   return result;
 };
 
+const createStudentFromEvent = async (e: any) => {
+  const studentData: Partial<Student> = {
+    studentId: e.id,
+    firstName: e.name.firstName,
+    lastName: e.name.lastName,
+    middleName: e.name.middleName,
+    bloodGroup: e.bloodGroup,
+    email: e.email,
+    gender: e.gender,
+    contactNo: e.contactNo,
+    academicDepartmentId: e.academicDepartment.syncId,
+    academicFacultyId: e.academicFaculty.syncId,
+    academicSemesterId: e.academicSemester.syncId,
+  };
+
+  await insertIntoDB(studentData as Student);
+};
+
 const updateStudent = async (
   id: string,
   payload: Partial<Student>
@@ -280,4 +298,5 @@ export const StudentService = {
   myCourses,
   getMyCourseSchedules,
   getMyAcademicInfo,
+  createStudentFromEvent,
 };
