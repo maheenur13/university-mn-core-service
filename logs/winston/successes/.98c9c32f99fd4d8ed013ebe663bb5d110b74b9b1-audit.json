@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\jahidun.nur\\Desktop\\NEXT-COURSE\\university-mn-core-service\\logs\\winston\\successes\\.98c9c32f99fd4d8ed013ebe663bb5d110b74b9b1-audit.json",
+    "files": [
+        {
+            "date": 1696174783950,
+            "name": "C:\\Users\\jahidun.nur\\Desktop\\NEXT-COURSE\\university-mn-core-service\\logs\\winston\\successes\\phu-2023-01-10-21-success.log",
+            "hash": "1b6401447fe1e5cd9fc6788543443dad873148bd2a49b6038071c594132d2bac"
+        },
+        {
+            "date": 1696256866213,
+            "name": "C:\\Users\\jahidun.nur\\Desktop\\NEXT-COURSE\\university-mn-core-service\\logs\\winston\\successes\\phu-2023-02-10-20-success.log",
+            "hash": "5881239fcbb498818f2f09996ab09a93cd53cb7dd58ceea948fdd213b48e9801"
+        },
+        {
+            "date": 1696308169259,
+            "name": "C:\\Users\\jahidun.nur\\Desktop\\NEXT-COURSE\\university-mn-core-service\\logs\\winston\\successes\\phu-2023-03-10-10-success.log",
+            "hash": "2772c8ba572900393c3a436148ba9fa7205e295ef015c34d05cfe2f3041ec7d3"
+        },
+        {
+            "date": 1696317943725,
+            "name": "C:\\Users\\jahidun.nur\\Desktop\\NEXT-COURSE\\university-mn-core-service\\logs\\winston\\successes\\phu-2023-03-10-13-success.log",
+            "hash": "f4b783c1744283e6c0b5c27c8dd0e4ae76d106e4520559cb54d4ef15e24bd39a"
+        },
+        {
+            "date": 1696358787335,
+            "name": "C:\\Users\\jahidun.nur\\Desktop\\NEXT-COURSE\\university-mn-core-service\\logs\\winston\\successes\\phu-2023-04-10-00-success.log",
+            "hash": "b58867cfe23e7b4d89a7884d38c349a2d850a2a736726adf38abea7e31588657"
+        }
+    ],
+    "hashType": "sha256"
+}
